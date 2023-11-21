@@ -3,9 +3,13 @@ node v16.20.2 (npm v8.19.4)
 
 To run
 
-```cd ./web
-ng serve```
+```
+cd ./web
+ng serve
+```
 
 and
 
-```npm start```
+```
+npm start
+```
