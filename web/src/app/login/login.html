@@ -1,0 +1,28 @@
+<div class="login">
+  <div class="login-card">
+    <mat-card>
+      <mat-card-title class="card-title">Welcome back</mat-card-title>
+      <mat-card-subtitle>Use any email and password combination</mat-card-subtitle>
+      <mat-card-content>
+
+      <form class="form" [formGroup]="loginForm" (submit)="submitLogin()">
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>E-mail</mat-label>
+          <input matInput placeholder="email@example.com" required formControlName="email" email="true">
+        </mat-form-field>
+
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password123" required formControlName="password" type="password" minlength="6">
+        </mat-form-field>
+
+        <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+        <button mat-flat-button color="primary" *ngIf="!loading" type="submit">Sign in</button>
+      </form>
+
+      
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

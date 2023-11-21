@@ -1,0 +1,16 @@
+<div class="upload">
+    <div class="upload-card">
+        <mat-card elevation="0">
+            <mat-card-content>
+                <div class="container">
+                    <input #FileSelectInputDialog class="form-control" type="file" (change)="onChange($event)" hidden>
+                </div>
+                <div class="container">
+                    <button (click)="OpenAddFilesDialog()" mat-flat-button color="primary" [disabled]="loading">
+                        SELECT FILE
+                    </button>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
